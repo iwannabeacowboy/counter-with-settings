@@ -1,0 +1,48 @@
+.block {
+    /*display: flex;*/
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px #63DAFC;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px;
+}
+
+.buttonsBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    border: solid 3px #63DAFC;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.btnWide {
+    padding: 0 40px;
+}
+
+.inputBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #2A2C35;
+    background-color: #63DAFC;
+    width: 300px;
+    border: solid 3px #63DAFC;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    height: 110px;
+}
+
+@media screen and (max-width: 840px) {
+    .container {
+        margin: 15px 0;
+    }
+}

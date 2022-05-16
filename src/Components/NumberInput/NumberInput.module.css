@@ -1,0 +1,26 @@
+.setter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.setter input {
+    outline: none;
+    width: 100px;
+    border: 2px solid #2A2C35;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.red input {
+    background: #fdd7d7;
+    border: 2px solid #cc0033;
+}
+
+.setter span {
+    padding-bottom: 6px;
+}

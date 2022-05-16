@@ -1,0 +1,21 @@
+.button {
+    background: #63DAFC;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2A2C35;
+    padding: 0 20px;
+    border: solid 3px #63DAFC;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.button:disabled {
+    opacity: 30%;
+    cursor: not-allowed;
+}
+
+.button:active {
+    background: #50b1cc;
+    border-color: #50b1cc;
+}

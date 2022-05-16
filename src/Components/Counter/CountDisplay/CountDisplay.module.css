@@ -1,0 +1,23 @@
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2A2C35;
+    background-color: #63DAFC;
+    width: 300px;
+    border: solid 3px #63DAFC;
+    border-radius: 10px;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    height: 110px;
+    flex-shrink: 0;
+}
+
+.red {
+    color: #cc0033;
+}
+
+.setting {
+    font-size: 40px;
+}
