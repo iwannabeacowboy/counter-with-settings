@@ -1,6 +1,6 @@
 import React from 'react';
-import {StatusType} from '../Counter';
 import s from './CountDisplay.module.css';
+import {StatusType} from '../../../App';
 
 type CountDisplayType = {
     count: number

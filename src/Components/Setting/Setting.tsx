@@ -1,8 +1,8 @@
 import React from 'react';
-import {StatusType} from './Counter';
 import {Button} from '../Button/Button';
-import {NumberInput} from '../NumberInput/NumberInput';
-import s from './Counter.module.css';
+import {NumberInput} from './NumberInput/NumberInput';
+import s from '../Counter.module.css';
+import {StatusType} from '../../App';
 
 type SettingType = {
     startCount: number
@@ -24,16 +24,12 @@ export const Setting = ({
                             setMaxCount
                         }: SettingType) => {
 
-    if (startCount >= maxCount || startCount < 0) {
-        setStatus('error')
-    }
-
-    const changeStartCount = (newStart:number) => {
+    const changeStartCount = (newStart: number) => {
         setStartCount(newStart)
         status !== 'setting' && setStatus('setting')
     }
 
-    const changeMaxCount = (newMax:number) => {
+    const changeMaxCount = (newMax: number) => {
         setMaxCount(newMax)
         status !== 'setting' && setStatus('setting')
     }
@@ -47,6 +43,7 @@ export const Setting = ({
 
     return (
         <div className={s.container}>
+
             <div className={s.inputBlock}>
                 <NumberInput
                     name={'max value:'}
@@ -64,12 +61,13 @@ export const Setting = ({
 
             <div className={s.buttonsBlock}>
                 <Button
-                name={'set'}
-                callBack={onSetClick}
-                isDisabled={status !== 'setting'}
-                className={s.btnWide}
-            />
+                    name={'set'}
+                    callBack={onSetClick}
+                    isDisabled={status !== 'setting'}
+                    className={s.btnWide}
+                />
             </div>
+
         </div>
     );
 };

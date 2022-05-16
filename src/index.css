@@ -15,17 +15,3 @@ code {
 html {
     background: #2A2C35;
 }
-
-.App {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 840px) {
-    .App {
-        flex-direction: column;
-    }
-}
