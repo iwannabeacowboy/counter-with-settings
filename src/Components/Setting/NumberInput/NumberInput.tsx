@@ -21,14 +21,14 @@ export const NumberInput = ({name, number, setNumber, red}: NumberInputType) => 
         return (
             <div className={`${s.setter} ${red && s.red}`}>
 
-                    <span>{name}</span>
+                <span>{name}</span>
 
-                    <input
-                        type="number"
-                        value={number}
-                        onChange={onChangeHandler}
-                        onBlur={onBlurHandler}
-                    />
+                <input
+                    type="number"
+                    value={number}
+                    onChange={onChangeHandler}
+                    onBlur={onBlurHandler}
+                />
 
             </div>
         );

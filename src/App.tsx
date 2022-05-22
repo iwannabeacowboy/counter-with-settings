@@ -22,7 +22,9 @@ function App() {
         maxCountStr && setMaxCount(JSON.parse(maxCountStr))
     }, [])
 
-    if (startCount >= maxCount || startCount < 0) {
+    if (startCount >= maxCount || startCount < 0 || maxCount > 999999
+        || !Number.isInteger(startCount || maxCount)) {
+
         status !== 'error' && setStatus('error')
     }
 
